@@ -23,7 +23,24 @@ to control the direction and range of displacements.
 
 ### Paper citation
 
-TO BE ADDED
+```
+@article{micromesh-construction,
+  author = {Maggiordomo, Andrea and Moreton, Henry and Tarini, Marco},
+  title = {Micro-Mesh Construction},
+  year = {2023},
+  issue_date = {August 2023},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  volume = {42},
+  number = {4},
+  issn = {0730-0301},
+  doi = {10.1145/3592440},
+  journal = {ACM Trans. Graph.},
+  month = {jul},
+  articleno = {121},
+  numpages = {18}
+}
+```
 
 ### Building and running
 
