@@ -1,0 +1,9 @@
+
+build*/
+_build*/
+
+inst*/
+_inst*/
+
+.vs
+

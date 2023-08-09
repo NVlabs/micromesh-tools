@@ -1,0 +1,19 @@
+[submodule "ext/imgui"]
+	path = ext/imgui
+	url = https://github.com/ocornut/imgui.git
+[submodule "ext/glfw"]
+	path = ext/glfw
+	url = https://github.com/glfw/glfw.git
+[submodule "ext/nativefiledialog"]
+	path = ext/nativefiledialog
+	url = https://github.com/mlabbe/nativefiledialog.git
+[submodule "ext/eigen"]
+	path = ext/eigen
+	url = https://gitlab.com/libeigen/eigen.git
+[submodule "ext/bary_core"]
+	path = ext/bary_core
+	url = https://github.com/NVIDIAGameWorks/Displacement-MicroMap-BaryFile.git
+[submodule "ext/cgltf"]
+	path = ext/cgltf
+	url = https://github.com/pixeljetstream/cgltf
+	branch = nvidia/micromap
