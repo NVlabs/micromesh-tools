@@ -62,11 +62,10 @@ void GUIApplication::_main_menu()
 {
 	int color_flags = ImGuiColorEditFlags_RGB | ImGuiColorEditFlags_Float | ImGuiColorEditFlags_AlphaPreviewHalf | ImGuiColorEditFlags_AlphaBar;
 
-	float indent_val = 0.f;
+	ImGui::SetNextWindowPos(ImVec2(gui.layout.pad, gui.layout.pad));
+	ImGui::SetNextWindowSize(ImVec2(gui.layout.menu_width, window.height - 2 * gui.layout.pad));
 
-	ImGui::SetNextWindowPos(ImVec2(0, 0));
-	ImGui::SetNextWindowSize(ImVec2(gui.layout.menu_width, window.height));
-	ImGui::Begin("Menu", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoTitleBar);
+	ImGui::Begin("Menu", nullptr, ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoResize | ImGuiWindowFlags_NoTitleBar);
 	ImGui::PushItemWidth(ImGui::GetFontSize() * -10);
 
 	ImGui::PushStyleColor(ImGuiCol_Text, IM_COL32(0, 255, 0, 255));
@@ -980,7 +979,7 @@ void GUIApplication::_view_overlay()
 	if (!file_loaded)
 		return;
 
-	ImGui::SetNextWindowPos(ImVec2(gui.layout.menu_width + gui.layout.pad, gui.layout.pad), ImGuiCond_Always);
+	ImGui::SetNextWindowPos(ImVec2(gui.layout.menu_width + 2 * gui.layout.pad, gui.layout.pad), ImGuiCond_Always);
 	ImGui::Begin("View mesh", NULL, ImGuiWindowFlags_AlwaysAutoResize | ImGuiWindowFlags_NoCollapse | ImGuiWindowFlags_NoMove | ImGuiWindowFlags_NoTitleBar);
 
 	_layer_widgets();

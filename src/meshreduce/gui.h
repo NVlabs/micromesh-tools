@@ -214,7 +214,7 @@ struct GUIApplication {
 	struct {
 		struct {
 			const int menu_width = 350;
-			const float pad = 10.0f;
+			const float pad = 5.0f;
 			const float widget_indentation = 12.0f;
 
 			const int tweak_marker_x = 295;
